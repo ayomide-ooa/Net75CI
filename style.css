@@ -1,0 +1,171 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+/* rtl:end:ignore */
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 40px; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .featurette {
+    padding-top: 100px!important;
+  }
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.bd-placeholder-img {
+  filter: opacity(0.3);
+  overflow: hidden;
+}
+.carousel {
+  background: #000;
+}
+.footer-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #00000081;
+}
+.curved-radius {
+  border-radius: 20px;
+}
+.flex-grow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media (max-width: 780px) {
+  .flex-grow{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .exp{
+    width: 100%;
+  }
+  
+  .whatsapp {
+      width: 70vw;
+  }
+  .comp-name a {
+      display: none;
+  }
+  .comp-name::before {
+      content: "Net 75";
+  }
+}
+.icon-wht {
+  fill: #fff;
+}
+.btn-outline-primary {
+  margin-bottom: 10px;
+}
+#contacts {
+  bottom: 0!important;
+}
+.nav-item {
+  font-weight: 700;
+}
+.footer-link:hover {
+  color: rgba(0,0,0,.5);
+}
+.net-logo {
+  margin-right: 10px;
+}
+.whatsapp {
+  border-width: 2px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 10vh;
+  right: 10px;
+  width: fit-content;
+  font-weight: 700;
+  z-index: 1;
+  fill: #0d6efd;
+}
+.whatsapp:hover, .whatsapp:active {
+  fill: #fff;
+  color: #fff;
+}
+.lead {
+    text-align: justify;
+}
